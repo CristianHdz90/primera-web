@@ -1,0 +1,687 @@
+@font-face {
+   font-family: 'icomoon';
+   src:  url('../fonts/icomoon.eot?s7gk0n');
+   src:  url('../fonts/icomoon.eot?s7gk0n#iefix') format('embedded-opentype'),
+     url('../fonts/icomoon.ttf?s7gk0n') format('truetype'),
+     url('../fonts/icomoon.woff?s7gk0n') format('woff'),
+     url('../fonts/icomoon.svg?s7gk0n#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+ }
+ 
+ [class^="icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1; 
+ 
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ [class*="social"] {
+   color: white;
+   font-size: 50px;
+   letter-spacing: 7px;
+   text-decoration: none;
+ }
+ 
+ .icon-social-twitter:before {
+   content: "\e900";
+ }
+ .icon-social-github:before {
+   content: "\e901";
+ }
+ .icon-social-instagram:before {
+   content: "\e902";
+ }
+ .icon-social-facebook:before {
+   content: "\e903";
+ }
+ .icon-menu:before {     /*IMPORTANT: i Can´t to let spaces between (:) and the words*/
+   content: "\e904";
+ }
+ 
+/*
+* HEADER
+*-----------------------------------------------------------------------------------------------
+*
+*/
+
+
+.header {
+   background-color:#1b2127; /*backg-1b2127;626262-claro; 1d252c-oscuro;Celes-#026fff*/
+   color: pink;
+   position: relative ;
+   display:flex;
+   justify-content: space-between;
+   height: 70px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+
+.menu {
+   height: inherit;
+   display: inherit;
+   align-items: center;
+}
+
+.header ol {
+   display: flex;
+   flex-wrap: nowrap;
+   height: inherit;
+   list-style: none;   /* This is from to remove the number and the point */
+}
+
+.header ol li {
+   height: inherit;
+}
+
+.header a {   /*selector descendente*/
+   color: white;
+   text-decoration: none;
+   height: inherit;
+   display: flex;
+   align-items: center;
+   padding: 0 10px;    /*recordar que se puede poner solo 0*/
+} 
+
+
+
+/**
+ *  02. Body
+ *---------------------------------------------------------------------------------------------------
+ */
+
+/*body header div nav ol li a*/
+ 
+body {
+   background: whitesmoke;
+   font-family: 'Source Sans Pro', sans-serif; /*si no encuenttras una usa la otra*/
+   margin: 0px;
+}
+/*sanserif es una fuente alternativa*/
+
+h1,h4,h5,h6 {
+   font-family: 'Fjalla One', sans-serif; /*si una fuente se nombra con más de una palabra se pone en comillas*/
+   font-weight: lighter;   /*Peso de la fuente (como negrita); normal= 400; bold = 600*/
+   font-style: italic;
+}
+/*si no le pongo la coma sería un solo selector descendente y no 6 independientes*/
+
+h1 {
+  line-height: 1.5;  /*Para la separación entre lineas*/
+  font-size: 45px; /*Para el tamaño de las fuentes*/
+  letter-spacing: -.2px; /*espacio entre letras; pequeñas medidas negativas está bien*/
+  color:white;
+  text-transform: capitalize;  /*Capitalize es que todas empiecen con mayus*/
+  text-decoration: underline;
+  margin: 0;
+}
+
+h1 strong {  /*selector descendente*/
+   font-weight: 100;
+   color: #026fff;
+   width: 500px;
+}
+
+/*
+*  HERO
+*---------------------------------------------------------------------------------------------------
+*
+*/
+
+.hero {
+   /*background-image: url(../images/hero.jpg);
+   background-size: 500px 300px;
+   background-repeat: no-repeat;   muy útil ya que size me los repitió al haber tanto espacio
+   background-position-x: right;*/
+   height: 300px;
+   background-color: #1b2127;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   z-index: 10;
+}
+
+.hero-image {
+   object-fit: cover;
+}
+
+/*.hero-title {
+   padding: 70px ;
+   padding-left:1000px;
+   padding-right: 0px;
+   position: absolute;
+   top: 120px;
+   margin: 10px;
+}*/
+
+/*.project div {}  <-- También se podría hacer de esta forma*/  
+
+/*
+*   PORTAFOLIO
+*-------------------------------------------------------------------------------------------------------
+*
+*/
+
+.portfolio {
+   background-color: #FAFAFA;   
+   padding: 20px;
+   padding-bottom: 0;
+}
+h2 {
+   text-transform: uppercase;
+   color: #026fff;
+   font-family:'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   font-size: 24px;
+   letter-spacing: -.2px;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+
+
+
+
+.project {
+   /*border-top: 10px solid red;
+   border-bottom: 10px solid red;
+   border-right: 10px solid GREEN;
+   border-left: 10px solid GREEN;*/
+   /*color: blue; is the same color border and text if not i don´t put one color to the border apart*/
+
+
+   /*border-color: #1b2127;  Ojo: No se verá si no asigno un ancho de borde;  El color predeterminado es el mismo de el texto interno
+   border-width: 10px; Tampoco sale nada si no le asigno un estilo de borde
+   border-style: solid; neither appear nothing 
+   border-top: double red 10px ;*/
+
+   /*border-top-left-radius: 50px;*/
+   background-color: white;
+   border: 1px solid gray;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.project-details {
+   width: 50%
+}
+.project-title {
+   font-size: 30px;
+   margin-bottom: 10px;
+   margin-top:0;
+}
+
+.project-course,   /*tambien puedo juntar 2 o más*/
+.project-date, 
+.project-url {
+   margin: 10px 0;
+}
+
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-description {
+   font-size: 18px;
+}
+
+.project-imageWrapper {
+   display: inline-block;
+   margin: 0;
+   width: 50%;
+}
+
+.project-image {   /* so i can to convert this image in responsive */
+   max-width: 100%;
+   height: auto;
+}
+
+/*.flexbox {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid blue;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: baseline;
+   height: 200px
+} 
+.box {
+   width: 50px;
+   height: 50px;
+   border: 1px solid red;
+   align-self: flex-start;     I could to use this property for just one of boards
+   margin: 3px;
+
+ol, ul {
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+}
+
+/*
+* FOOTER
+*
+*
+*/
+
+.footer {
+   color: white;
+   background-color:#1b2127 ;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+   flex-wrap:wrap;
+}
+
+.footer a {
+   color: rgb(169, 255, 255);
+}
+
+.footer img {
+   vertical-align: middle;
+}
+
+
+/*
+*  Eventos
+* -----------------------------------------------------------------------
+*
+*/
+
+.event-list {
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.event-list-tittle {
+   margin-left: 30px;
+   left: 0;
+}
+
+.event {
+   margin: 1px;
+   width: 48%;
+   border-radius: 10px;
+   overflow: hidden;
+   flex-shrink: 0;
+   background-color: #f4fbff;
+}
+
+.event-imageContainer{
+   margin: 0;
+}
+
+.event-image {
+   width: 480px; /*Podriamos haber usado inheredit*/
+   height: 200px;
+   object-fit: cover;
+}
+
+.event-detail {
+   margin: 20px 40px;
+   margin-top: -40px;
+   background-color: white;
+   position: relative;
+   padding: 20px;
+   text-align: center;
+}
+
+.event-description {
+   text-align: left;
+}
+
+.event-url {
+   color: #026FFF;
+   border: 1px solid;
+   text-decoration: none;
+   padding: 5px 20px;
+   border-radius: 5px;
+}
+
+/*
+*   Contact/ formulario
+*-------------------------------------------------------------------------------------------------
+*
+*/
+
+.contact {
+   background-color: #056fff;
+   color: white;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.social-link {
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   background-size: 50px 50px; 
+   margin:0 10px;
+}
+
+/* .social-link.twitter {
+   background-image: url('../images/twitter.svg');
+}
+.social-link.facebook {
+   background-image: url('../images/facebook.svg');
+}
+.social-link.github {
+   background-image: url('../images/github.svg');
+}
+.social-link.instagram {
+   background-image: url('../images/instagram.svg');
+    al ser escalable debo darle un tamaño } */
+
+.form-email{
+   margin: 1em;
+}
+
+.form-email input{
+   border-radius: 5px;
+   border-style: solid;
+   height: 24px;
+   background-image: url('../images/envelope.svg');
+   background-size: 15px 15px ;  /*tamaño del svg*/
+   background-repeat: no-repeat;
+   background-position-y: center;
+   padding: 5px 20px 5px 25px;  /*para mover el Placeholder*/
+   justify-content: space-between;
+   background-position-x: 5px;
+}
+
+.form-email button{
+   color: white;
+   background-color: transparent;
+   display: block;
+   margin:10px;
+   margin-left: 0px;
+   padding: 10px 50px;
+   border-radius: 5px;
+   border: 1px solid white
+}
+
+.form-email h3 {
+   font-family: 'Source Sans Pro', sans-serif;
+   letter-spacing: -.5px;
+}
+
+/*
+* Contenedores finales
+*-------------------------------------------------------------------------------------------------
+*
+*/
+
+.container {
+   max-width: 1000px;
+   /* width: 100%; This element serves for to occupy all space available(disponible) */
+   flex: 1;
+   margin:0 auto;
+   display: inherit;
+   justify-content: inherit;
+   align-items: inherit;
+   height: inherit;
+   flex-wrap: inherit;
+}
+
+/*
+*    Course of Resposive Desing
+*
+*
+*/
+
+/*
+*   VIDEO
+*-------------------------------------------------------------------------------------------
+*
+*/
+
+.html-video {
+   width: 100%;
+   height: 200px;
+}
+
+/*
+*    MENU
+*-----------------------------------------------------------------------------------------------
+*
+*/
+
+.burger-button {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: rgba(27, 33, 39, .8);
+   display: none;
+   font-size: 20px;  /*Because is a font*/
+   line-height: 40px; /*This is for to align the element with */
+   text-align: center;
+   position: fixed;
+   z-index: 20;
+   top: 10px;
+   left: 10px;
+   color: white;  /*Because is a text-icon*/
+}
+
+/*
+*  Media query
+* -----------------------------------------------------------------------------------------------
+*
+*
+*/
+
+@media screen and (max-width: 1023px) {
+   .event-list-tittle {
+      margin-left: 10px;
+   }
+   .container {
+      padding: 0 10px;
+   }  
+
+   /*
+*   HERO
+*
+*/
+
+.hero {
+   height: auto;
+   position: relative;
+   overflow: hidden;
+   padding: 2em;
+}
+h1 {
+   font-size: 1.8em;
+   z-index: 2;
+}
+.hero-image {
+   position: absolute;
+   z-index: 1;
+   top:0;
+   right:0;
+   bottom:0;
+   left:0;
+   width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+   .burger-button {
+      display: block;
+   } 
+   .header {
+      display: block;
+      height: auto;
+   }
+   .header ol {
+      display: inherit; /*flex*/
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .header ol li {
+      height: 50px;
+   }
+   .header a {
+      justify-content: center;
+      text-decoration: underline;
+      font-size: 5.5vmax;
+      height: 40px;
+      margin-bottom: .5em;
+   }
+   .header-logo {
+      text-align: center;
+      margin:0;
+      padding-top: 10px;
+   }
+
+   .menu {
+      position: fixed;
+      background-color: rgba(5, 111, 255, .9);
+      z-index: 15;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      transition: .3s;
+   }
+
+   .menu.is-active {
+      left: 0;
+   }
+   /*
+   *   Project-----------------------------------------------------
+   *
+   **/
+   .project{
+      display: block;
+   }
+   .project-imageWrapper {
+      width: auto;
+      text-align:center;
+      display: block;
+   }
+   .project-details {
+       width: auto;
+       font-size: 16px;
+   }
+   .project-course, .project-date, .project-url {
+      margin: .3em 0;
+   }
+   .project-title {
+      font-size: 1.5em;
+      margin-bottom: .3em;
+   }
+   .project-course {
+      font-size: .8em;
+   }
+   .project-date{
+      font-size: 1em;
+   }
+   .project-url {
+      font-size: 1em;
+   }
+   .project-description {
+      font-size: 1em;
+   }
+
+      
+   /*
+   *   Events--------------------------------------------
+   * 
+   **/
+   .event {
+      width: auto;
+      flex-shrink: initial;
+   }
+   .event-image {
+      width:100%;
+      max-height: 250px;
+      object-position: 25% 25%;
+   }
+   .event-detail {
+      margin: -2em .5em .5em ; /*The medium is left and right*/
+      padding: 1em;
+   }
+
+}
+
+
+@media screen and (max-width: 611px) {
+
+   h1 {
+      font-size: 1.8em;
+   }
+   h2 {
+      font-size: 1.17em;
+   }
+   /*
+   *   Contact--------------------------------------------
+   * 
+   **/
+   .contact {
+      height: auto;
+      text-align: center;
+      display: block;
+      padding: 1em 0;
+   }
+   .form-email {
+      margin-top: 0;
+   }
+   .form-email h3 {
+      margin-top:0;
+   }
+   .form-email button {
+      margin: 1em auto;
+   }
+   .footer {
+      display: block;
+      text-align: center;
+      border: 1px solid transparent; /*This is for to generate collision between margin and border*/
+   }
+}
+@media screen and (max-width: 480px) {
+   h1 {
+      font-size: 1.8em;
+   }
+   .hero {
+      padding: 1.5em .2em;
+   }
+}
+@media screen and (max-width: 320px) {  /*i don´t have that put all elements beacuse these not change*/
+   .project-details {
+      font-size: 12px; /*just will change this value*/
+      text-overflow: ellipsis;     /*REVIEW!!*/
+   }
+   h1 {
+      font-size: 1.4em;
+      text-shadow: 1px 2px 2px #000;
+   }
+   .hero {
+      padding: 2em 1em;
+   }
+   .hero-image {
+      filter: brightness(1) blur(1px);
+   }
+}
